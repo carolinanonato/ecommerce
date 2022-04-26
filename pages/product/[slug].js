@@ -9,7 +9,7 @@ const ProductDetails = ({ product, products }) => {
 
     const [index, setIndex] = useState(0)
 
-    const { decQty, incQty, qty } = useStateContext()
+    const { decQty, incQty, qty, onAdd } = useStateContext()
 
     return (
         <div>
