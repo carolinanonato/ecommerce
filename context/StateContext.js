@@ -8,8 +8,8 @@ export const StateContext = ({ children }) => {
 
     const [showCart, setShowCart] = useState(false);
     const [cartItems, setCartItems] = useState([]);
-    const [totalPrice, setTotalPrice] = useState();
-    const [totalQuantities, settotalQuantities] = useState();
+    const [totalPrice, setTotalPrice] = useState(0);
+    const [totalQuantities, settotalQuantities] = useState(0);
     const [qty, setQty] = useState(1);
 
 
@@ -52,6 +52,7 @@ export const StateContext = ({ children }) => {
     return (
         <Context.Provider value={{
             showCart,
+            setShowCart,
             cartItems,
             totalPrice,
             totalQuantities,
